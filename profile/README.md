@@ -33,12 +33,15 @@ iPhone           == signed action ====>  nerve-agent on your host
 | [`nerve-cli`](https://github.com/nerve-ink/nerve-cli) | Send encrypted one-way signals from scripts and CI/CD |
 | [`nerve-agent`](https://github.com/nerve-ink/nerve-agent) | Connect a host for signed, bounded actions |
 
-The iOS app and hosted relay are gated while V1 stabilizes.
+NerveOps for iOS is available on the
+[App Store](https://apps.apple.com/us/app/nerveops/id6778026992). The public
+repos are `nerve-cli` for send-only encrypted signals and `nerve-agent` for
+optional signed actions.
 
 ## Send Signals
 
 ```bash
-go install github.com/nerve-ink/nerve-cli/cmd/nerve@latest
+curl -fsSL https://nerve.ink/install.sh | sh
 export NERVE_DSN="nerve://TOKEN:SENDER_KEY@api.nerve.ink"
 echo "deploy failed" | nerve send
 ```
@@ -67,5 +70,5 @@ before running the agent on production infrastructure.
 
 ## Status
 
-Nerve is early. The current focus is the V1.1 loop: encrypted sender signals,
-visible iOS push, signed bounded agent actions, and clean public documentation.
+The current public loop is encrypted sender signals, visible iOS push, optional
+signed bounded agent actions, and clean docs for operational use cases.

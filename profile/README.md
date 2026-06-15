@@ -33,7 +33,7 @@ iPhone           == signed action ====>  nerve-agent on your host
 | [`nerve-cli`](https://github.com/nerve-ink/nerve-cli) | Send encrypted one-way signals from scripts and CI/CD |
 | [`nerve-agent`](https://github.com/nerve-ink/nerve-agent) | Connect a host for signed, bounded actions |
 
-NerveOps for iOS is available on the
+NerveOps for iOS is available as a public beta on the
 [App Store](https://apps.apple.com/us/app/nerveops/id6778026992). The public
 repos are `nerve-cli` for send-only encrypted signals and `nerve-agent` for
 optional signed actions.
